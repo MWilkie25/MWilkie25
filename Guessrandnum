@@ -1,0 +1,34 @@
+#include <ctime>
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+int main()
+{
+  srand(time(0));
+int input, randomN, test=0,x;
+randomN = rand()% 100;
+cout << "Please Input A Number" << endl;
+
+do
+{
+cin >> input;
+if (input > randomN)
+{
+cout << "Your guess is too big" << endl;
+test++;
+}
+else if (input < randomN)
+{
+cout << "Your guess is too small" << endl;
+test++;
+}
+else
+{
+x = test;
+cout << "You have guessed correctly the number was : " << randomN << endl;
+test = -1;
+}
+} while (test != -1);
+cout << "Try Count: " << x << endl;
+return 0;
+}
