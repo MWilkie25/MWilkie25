@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int n,i;
+cout<<"enter the row amount:"<<endl;
+cin>>n;
+for(i=1;i<=n;i++){
+for(int k=0;k<n-1;k++)
+{
+  cout<<"";
+}
+for (int l=1;l<=i;l++)
+{
+  cout<<"*";
+}
+cout<<"\n";
+}
+
+}
